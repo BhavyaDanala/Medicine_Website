@@ -1,0 +1,9 @@
+﻿using MediatR;
+using PharmacyService.Models;
+
+namespace PharmacyService.Features.Pharmacies.Queries
+{
+    public class GetAllInventoryQuery : IRequest<List<PharmacyMedicine>>
+    {
+    }
+}

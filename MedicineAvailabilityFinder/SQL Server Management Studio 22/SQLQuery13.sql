@@ -1,0 +1,5 @@
+SELECT TOP (1000) [Id]
+      ,[Code]
+      ,[Name]
+      ,[RegionImageUrl]
+  FROM [NZWalksDb].[dbo].[Regions]

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="AuthService/AuthService.csproj" Id="d507fcda-b188-441a-87ef-5939ae7c48fc" />
+  <Project Path="DashboardService/DashboardService.csproj" Id="201a8130-e939-4874-8752-9216cb663ccd" />
+  <Project Path="MedicineService/MedicineService.csproj" />
+  <Project Path="NotificationService/NotificationService.csproj" />
+  <Project Path="PharmacyService/PharmacyService.csproj" />
+  <Project Path="SharedLibrary/SharedLibrary.csproj" Id="83ae9e37-3a4c-48fa-893c-ecbdd2253fc7" />
+</Solution>
