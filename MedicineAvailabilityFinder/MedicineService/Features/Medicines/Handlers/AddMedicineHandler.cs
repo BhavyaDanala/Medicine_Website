@@ -23,7 +23,8 @@ namespace MedicineService.Features.Medicines.Handlers
             {
                 MedicineName = request.MedicineName,
                 Category = request.Category,
-                Manufacturer = request.Manufacturer
+                Manufacturer = request.Manufacturer,
+                Symptoms = request.Symptoms
             };
 
             _context.Medicines.Add(medicine);

@@ -25,11 +25,15 @@ namespace PharmacyService.Features.Pharmacies.Handlers
             var pharmacies =
                 await _context.Pharmacies.ToListAsync();
 
-            var result = pharmacies.Select(p => new NearbyPharmacyDto
+            var result = pharmacies.Select(p => 
+            
+            new NearbyPharmacyDto
                 {
                     PharmacyId = p.PharmacyId,
                     PharmacyName = p.PharmacyName,
                     Address = p.Address,
+                    Latitude = p.Latitude,
+                    Longitude = p.Longitude,
 
                     DistanceKm =
                         Math.Sqrt(

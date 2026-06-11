@@ -1,7 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using MedicineService.Features.Medicines.Commands;
+using MedicineService.Features.Medicines.Dtos;
 using MedicineService.Features.Medicines.Queries;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace MedicineService.Controllers
 {
@@ -65,6 +67,42 @@ namespace MedicineService.Controllers
                     new GetAllMedicinesQuery());
 
             return Ok(result);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateMedicine(UpdateMedicineDto dto)
+        {
+            var result =
+                await _mediator.Send(
+                    new UpdateMedicineCommand
+                    {
+                        Medicine = dto
+                    });
+
+            if (!result)
+            {
+                return NotFound();
+            }
+
+            return Ok("Medicine Updated Successfully");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMedicine(int id)
+        {
+            var result =
+                await _mediator.Send(
+                    new DeleteMedicineCommand
+                    {
+                        MedicineId = id
+                    });
+
+            if (!result)
+            {
+                return NotFound();
+            }
+
+            return Ok("Medicine Deleted Successfully");
         }
     }
 }

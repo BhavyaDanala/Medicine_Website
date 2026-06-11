@@ -23,6 +23,7 @@ namespace PharmacyService.Features.Pharmacies.Handlers
                     PharmacyId = p.PharmacyId,
                     PharmacyName = p.PharmacyName,
                     Address = p.Address,
+                    PhoneNumber = p.PhoneNumber,
                     Latitude = p.Latitude,
                     Longitude = p.Longitude
                 })

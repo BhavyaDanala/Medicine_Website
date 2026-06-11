@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PharmacyService.Features.Pharmacies.Commands;
+using PharmacyService.Features.Pharmacies.DTOs;
 using PharmacyService.Features.Pharmacies.Queries;
 
 namespace PharmacyService.Controllers
@@ -126,6 +127,45 @@ namespace PharmacyService.Controllers
                     new GetAllInventoryQuery());
 
             return Ok(result);
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> UpdatePharmacy(UpdatePharmacyDto dto)
+
+        {
+            var result =
+                await _mediator.Send(
+                    new UpdatePharmacyCommand
+                    {
+                        Pharmacy = dto
+                    });
+
+            if (!result)
+            {
+                return NotFound();
+            }
+
+            return Ok("Pharmacy Updated Successfully");
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePharmacy(int id)
+        {
+            var result =
+                await _mediator.Send(
+                    new DeletePharmacyCommand
+                    {
+                        PharmacyId = id
+                    });
+
+            if (!result)
+            {
+                return NotFound();
+            }
+
+            return Ok("Pharmacy Deleted Successfully");
         }
     }
 }

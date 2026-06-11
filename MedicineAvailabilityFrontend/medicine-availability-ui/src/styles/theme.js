@@ -1,0 +1,43 @@
+export const theme = {
+  colors: {
+    medicalBlue: '#0077b6',
+    medicalBlueDark: '#023e8a',
+    medicalBlueLight: '#48cae4',
+    mintGreen: '#4caf50',
+    mintGreenDark: '#2e7d32',
+    mintGreenLight: '#81c784',
+    white: '#ffffff',
+    lightGray: '#f5f5f5',
+    mediumGray: '#e0e0e0',
+    darkGray: '#424242',
+    black: '#000000',
+    error: '#f44336',
+    warning: '#ff9800',
+    success: '#4caf50',
+  },
+  spacing: {
+    xs: '4px',
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+    xl: '32px',
+    xxl: '48px',
+  },
+  fonts: {
+    primary: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+    secondary: "'Roboto', Arial, sans-serif",
+  },
+  fontSizes: {
+    xs: '12px',
+    sm: '14px',
+    md: '16px',
+    lg: '18px',
+    xl: '24px',
+    xxl: '32px',
+  },
+  breakpoints: {
+    mobile: '768px',
+    tablet: '1024px',
+    desktop: '1200px',
+  },
+};
