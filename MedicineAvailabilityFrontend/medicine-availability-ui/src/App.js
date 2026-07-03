@@ -1,9 +1,10 @@
-﻿import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyles from "./styles/GlobalStyles";
 import ToastContainer from "./components/ui/ToastContainer";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
+import CreatePasswordPage from "./pages/CreatePasswordPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import PharmacyDashboard from "./pages/PharmacyDashboard";
 import CustomerDashboard from "./pages/CustomerDashboard";
@@ -28,6 +29,11 @@ function App() {
                 <Route
                     path="/forgot-password"
                     element={<ForgotPasswordPage />}
+                />
+
+                <Route
+                    path="/create-password"
+                    element={<CreatePasswordPage />}
                 />
 
                 <Route

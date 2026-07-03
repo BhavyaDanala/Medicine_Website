@@ -18,13 +18,19 @@ const ButtonGroup = styled.div`
 
 const Button = styled.button`
   flex: 1;
-  padding: ${theme.spacing.md} ${theme.spacing.lg};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: none;
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
-  font-weight: 600;
+  font-weight: ${theme.fontWeights.semibold};
+  font-family: ${theme.fonts.primary};
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all ${theme.transitions.normal};
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
+  }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.sm} ${theme.spacing.md};
@@ -33,12 +39,14 @@ const Button = styled.button`
 `;
 
 const SubmitButton = styled(Button)`
-  background: linear-gradient(135deg, ${theme.colors.medicalBlue} 0%, ${theme.colors.medicalBlueDark} 100%);
+  background: linear-gradient(135deg, ${theme.colors.primary} 0%, ${theme.colors.primaryDark} 100%);
   color: ${theme.colors.white};
+  box-shadow: ${theme.shadows.sm};
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+    box-shadow: ${theme.shadows.md};
+    background: linear-gradient(135deg, ${theme.colors.primaryDark} 0%, ${theme.colors.primary} 100%);
   }
 
   &:disabled {
@@ -50,7 +58,7 @@ const SubmitButton = styled(Button)`
 
 const CancelButton = styled(Button)`
   background-color: ${theme.colors.mediumGray};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.darkerGray};
 
   &:hover {
     background-color: ${theme.colors.darkGray};

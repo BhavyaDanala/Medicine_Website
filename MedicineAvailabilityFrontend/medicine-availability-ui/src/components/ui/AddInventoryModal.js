@@ -12,49 +12,79 @@ const Form = styled.form`
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacing.xs};
+  gap: ${theme.spacing.sm};
 `;
 
 const Label = styled.label`
   font-size: ${theme.fontSizes.sm};
-  font-weight: 500;
-  color: ${theme.colors.darkGray};
+  font-weight: ${theme.fontWeights.medium};
+  color: ${theme.colors.darkerGray};
+  font-family: ${theme.fonts.primary};
 `;
 
 const Select = styled.select`
-  padding: ${theme.spacing.md};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: 2px solid ${theme.colors.mediumGray};
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
   font-family: ${theme.fonts.primary};
-  transition: border-color 0.3s ease;
+  transition: all ${theme.transitions.normal};
+  background-color: ${theme.colors.white};
+  color: ${theme.colors.darkerGray};
+  cursor: pointer;
 
   &:focus {
     outline: none;
-    border-color: ${theme.colors.medicalBlue};
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 4px ${theme.colors.primaryLighter};
+  }
+
+  &:hover {
+    border-color: ${theme.colors.darkGray};
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
   }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.sm};
+    padding: ${theme.spacing.sm} ${theme.spacing.md};
     font-size: ${theme.fontSizes.sm};
   }
 `;
 
 const Input = styled.input`
-  padding: ${theme.spacing.md};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: 2px solid ${theme.colors.mediumGray};
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
   font-family: ${theme.fonts.primary};
-  transition: border-color 0.3s ease;
+  transition: all ${theme.transitions.normal};
+  background: ${theme.colors.white};
+  color: ${theme.colors.darkerGray};
+
+  &::placeholder {
+    color: ${theme.colors.darkGray};
+  }
 
   &:focus {
     outline: none;
-    border-color: ${theme.colors.medicalBlue};
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 4px ${theme.colors.primaryLighter};
+  }
+
+  &:hover {
+    border-color: ${theme.colors.darkGray};
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
   }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.sm};
+    padding: ${theme.spacing.sm} ${theme.spacing.md};
     font-size: ${theme.fontSizes.sm};
   }
 `;
@@ -67,13 +97,19 @@ const ButtonGroup = styled.div`
 
 const Button = styled.button`
   flex: 1;
-  padding: ${theme.spacing.md} ${theme.spacing.lg};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: none;
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
-  font-weight: 600;
+  font-weight: ${theme.fontWeights.semibold};
+  font-family: ${theme.fonts.primary};
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all ${theme.transitions.normal};
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
+  }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.sm} ${theme.spacing.md};
@@ -82,12 +118,14 @@ const Button = styled.button`
 `;
 
 const SubmitButton = styled(Button)`
-  background: linear-gradient(135deg, ${theme.colors.medicalBlue} 0%, ${theme.colors.medicalBlueDark} 100%);
+  background: linear-gradient(135deg, ${theme.colors.primary} 0%, ${theme.colors.primaryDark} 100%);
   color: ${theme.colors.white};
+  box-shadow: ${theme.shadows.sm};
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.4);
+    box-shadow: ${theme.shadows.md};
+    background: linear-gradient(135deg, ${theme.colors.primaryDark} 0%, ${theme.colors.primary} 100%);
   }
 
   &:disabled {
@@ -99,7 +137,7 @@ const SubmitButton = styled(Button)`
 
 const CancelButton = styled(Button)`
   background-color: ${theme.colors.mediumGray};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.darkerGray};
 
   &:hover {
     background-color: ${theme.colors.darkGray};
@@ -107,46 +145,44 @@ const CancelButton = styled(Button)`
   }
 `;
 
-function AddInventoryModal({ pharmacies, medicines, onClose, onSubmit }) {
-  const [pharmacyId, setPharmacyId] = useState('');
+function AddInventoryModal({ medicines, onClose, onSubmit }) {
   const [medicineId, setMedicineId] = useState('');
+  const [isOthers, setIsOthers] = useState(false);
+  const [newMedicineName, setNewMedicineName] = useState('');
+  const [category, setCategory] = useState('');
+  const [manufacturer, setManufacturer] = useState('');
+  const [symptoms, setSymptoms] = useState('');
   const [quantity, setQuantity] = useState('');
   const [price, setPrice] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit({
-      pharmacyId: parseInt(pharmacyId),
-      medicineId: parseInt(medicineId),
+      isOthers,
+      medicineId: isOthers ? 'others' : parseInt(medicineId),
+      newMedicineName,
+      category,
+      manufacturer,
+      symptoms,
       quantity: parseInt(quantity),
       price: parseFloat(price),
     });
+  };
+
+  const handleMedicineChange = (e) => {
+    const value = e.target.value;
+    setMedicineId(value);
+    setIsOthers(value === 'others');
   };
 
   return (
     <Modal title="Add Inventory" onClose={onClose}>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
-          <Label>Pharmacy</Label>
-          <Select
-            value={pharmacyId}
-            onChange={(e) => setPharmacyId(e.target.value)}
-            required
-          >
-            <option value="">Select Pharmacy</option>
-            {pharmacies.map((pharmacy) => (
-              <option key={pharmacy.pharmacyId} value={pharmacy.pharmacyId}>
-                {pharmacy.pharmacyName}
-              </option>
-            ))}
-          </Select>
-        </FormGroup>
-
-        <FormGroup>
           <Label>Medicine</Label>
           <Select
             value={medicineId}
-            onChange={(e) => setMedicineId(e.target.value)}
+            onChange={handleMedicineChange}
             required
           >
             <option value="">Select Medicine</option>
@@ -155,8 +191,57 @@ function AddInventoryModal({ pharmacies, medicines, onClose, onSubmit }) {
                 {medicine.medicineName}
               </option>
             ))}
+            <option value="others">Others</option>
           </Select>
         </FormGroup>
+
+        {isOthers && (
+          <>
+            <FormGroup>
+              <Label>Medicine Name</Label>
+              <Input
+                type="text"
+                value={newMedicineName}
+                onChange={(e) => setNewMedicineName(e.target.value)}
+                required
+                placeholder="Enter new medicine name"
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label>Category</Label>
+              <Input
+                type="text"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+                required
+                placeholder="e.g., Painkiller, Antibiotic"
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label>Manufacturer</Label>
+              <Input
+                type="text"
+                value={manufacturer}
+                onChange={(e) => setManufacturer(e.target.value)}
+                required
+                placeholder="Enter manufacturer name"
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label>Symptoms / Uses</Label>
+              <Input
+                type="text"
+                value={symptoms}
+                onChange={(e) => setSymptoms(e.target.value)}
+                required
+                placeholder="e.g., Headache, Fever"
+              />
+            </FormGroup>
+          </>
+        )}
 
         <FormGroup>
           <Label>Quantity</Label>

@@ -18,13 +18,19 @@ const ButtonGroup = styled.div`
 
 const Button = styled.button`
   flex: 1;
-  padding: ${theme.spacing.md} ${theme.spacing.lg};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: none;
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
-  font-weight: 600;
+  font-weight: ${theme.fontWeights.semibold};
+  font-family: ${theme.fonts.primary};
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all ${theme.transitions.normal};
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
+  }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.sm} ${theme.spacing.md};
@@ -33,12 +39,14 @@ const Button = styled.button`
 `;
 
 const SubmitButton = styled(Button)`
-  background: linear-gradient(135deg, ${theme.colors.mintGreen} 0%, ${theme.colors.mintGreenDark} 100%);
+  background: linear-gradient(135deg, ${theme.colors.success} 0%, ${theme.colors.successDark} 100%);
   color: ${theme.colors.white};
+  box-shadow: ${theme.shadows.sm};
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    box-shadow: ${theme.shadows.md};
+    background: linear-gradient(135deg, ${theme.colors.successDark} 0%, ${theme.colors.success} 100%);
   }
 
   &:disabled {
@@ -50,7 +58,7 @@ const SubmitButton = styled(Button)`
 
 const CancelButton = styled(Button)`
   background-color: ${theme.colors.mediumGray};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.darkerGray};
 
   &:hover {
     background-color: ${theme.colors.darkGray};
@@ -60,17 +68,22 @@ const CancelButton = styled(Button)`
 
 const ErrorMessage = styled.div`
   color: ${theme.colors.error};
-  font-size: ${theme.fontSizes.sm};
+  font-size: ${theme.fontSizes.xs};
   margin-top: ${theme.spacing.xs};
+  font-weight: ${theme.fontWeights.medium};
 `;
 
 function AddPharmacyModal({ onClose, onSubmit }) {
   const [pharmacyName, setPharmacyName] = useState('');
+  const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
+  const [openingTime, setOpeningTime] = useState('');
+  const [closingTime, setClosingTime] = useState('');
   const [phoneError, setPhoneError] = useState('');
+  const [timeError, setTimeError] = useState('');
 
   const validatePhoneNumber = (value) => {
     const phoneRegex = /^[0-9]{10}$/;
@@ -88,8 +101,26 @@ function AddPharmacyModal({ onClose, onSubmit }) {
     }
   };
 
+  const isTimeValid = (open, close) => {
+    if (open && close) {
+      if (close <= open) {
+        return false;
+      }
+    }
+    return true;
+  };
+
+  const validateTime = (open, close) => {
+    if (!isTimeValid(open, close)) {
+      setTimeError('Closing Time must be later than Opening Time');
+      return false;
+    }
+    setTimeError('');
+    return true;
+  };
+
   const isFormValid = () => {
-    return pharmacyName && address && phoneNumber && latitude && longitude && !phoneError && validatePhoneNumber(phoneNumber);
+    return pharmacyName && email && address && phoneNumber && latitude && longitude && openingTime && closingTime && !phoneError && validatePhoneNumber(phoneNumber) && isTimeValid(openingTime, closingTime);
   };
 
   const handleSubmit = (e) => {
@@ -99,10 +130,13 @@ function AddPharmacyModal({ onClose, onSubmit }) {
     }
     onSubmit({
       pharmacyName,
+      email,
       address,
       phoneNumber,
       latitude: parseFloat(latitude),
       longitude: parseFloat(longitude),
+      openingTime,
+      closingTime
     });
   };
 
@@ -114,6 +148,15 @@ function AddPharmacyModal({ onClose, onSubmit }) {
           value={pharmacyName}
           onChange={(e) => setPharmacyName(e.target.value)}
           placeholder="Enter pharmacy name"
+          required
+        />
+
+        <FormInput
+          label="Email Address"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter pharmacy email"
           required
         />
 
@@ -162,6 +205,32 @@ function AddPharmacyModal({ onClose, onSubmit }) {
           min="-180"
           max="180"
         />
+
+        <FormInput
+          label="Opening Time"
+          type="time"
+          value={openingTime}
+          onChange={(e) => {
+            setOpeningTime(e.target.value);
+            validateTime(e.target.value, closingTime);
+          }}
+          required
+        />
+
+        <div>
+          <FormInput
+            label="Closing Time"
+            type="time"
+            value={closingTime}
+            onChange={(e) => {
+              setClosingTime(e.target.value);
+              validateTime(openingTime, e.target.value);
+            }}
+            required
+            isValid={!timeError}
+          />
+          {timeError && <ErrorMessage>{timeError}</ErrorMessage>}
+        </div>
 
         <ButtonGroup>
           <CancelButton type="button" onClick={onClose}>

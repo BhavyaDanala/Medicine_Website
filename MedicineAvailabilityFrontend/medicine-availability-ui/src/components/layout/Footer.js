@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { FaHeartbeat, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { theme } from '../../styles/theme';
+import { FaHeartbeat } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
-  background-color: ${theme.colors.medicalBlueDark};
-  color: ${theme.colors.white};
-  padding: ${theme.spacing.xl} ${theme.spacing.xl};
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 16px 40px;
   margin-top: auto;
+  border-top: 1px solid #1e293b;
 
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.lg} ${theme.spacing.md};
+  @media (max-width: 768px) {
+    padding: 16px 20px;
   }
 `;
 
@@ -20,84 +20,56 @@ const FooterContent = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: ${theme.spacing.lg};
+  gap: 16px;
 
-  @media (max-width: ${theme.breakpoints.mobile}) {
+  @media (max-width: 768px) {
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
   }
 `;
 
 const FooterLogo = styled.div`
   display: flex;
   align-items: center;
-  gap: ${theme.spacing.sm};
-  font-size: ${theme.fontSizes.lg};
-  font-weight: bold;
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    font-size: ${theme.fontSizes.md};
-  }
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
 `;
 
 const FooterIcon = styled(FaHeartbeat)`
-  color: ${theme.colors.mintGreen};
+  color: #3b82f6;
+  font-size: 20px;
 `;
 
 const FooterLinks = styled.div`
   display: flex;
-  gap: ${theme.spacing.lg};
+  gap: 24px;
+  align-items: center;
 
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    flex-direction: column;
-    gap: ${theme.spacing.sm};
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 `;
 
 const FooterLink = styled.a`
-  color: ${theme.colors.white};
-  transition: color 0.3s ease;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: ${theme.colors.mintGreen};
-  }
-`;
-
-const SocialLinks = styled.div`
-  display: flex;
-  gap: ${theme.spacing.md};
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    gap: ${theme.spacing.lg};
-  }
-`;
-
-const SocialIcon = styled.a`
-  color: ${theme.colors.white};
-  font-size: ${theme.fontSizes.lg};
-  transition: all 0.3s ease;
-
-  &:hover {
-    color: ${theme.colors.mintGreen};
-    transform: translateY(-2px);
-  }
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    font-size: ${theme.fontSizes.xl};
+    color: #3b82f6;
   }
 `;
 
 const Copyright = styled.div`
-  text-align: center;
-  margin-top: ${theme.spacing.lg};
-  padding-top: ${theme.spacing.md};
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: ${theme.fontSizes.sm};
-  color: ${theme.colors.medicalBlueLight};
-
-  @media (max-width: ${theme.breakpoints.mobile}) {
-    font-size: ${theme.fontSizes.xs};
-  }
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
 `;
 
 function Footer() {
@@ -108,24 +80,18 @@ function Footer() {
           <FooterIcon />
           <span>MediFind</span>
         </FooterLogo>
+        
         <FooterLinks>
           <FooterLink href="#">About</FooterLink>
           <FooterLink href="#">Contact</FooterLink>
           <FooterLink href="#">Privacy Policy</FooterLink>
           <FooterLink href="#">Terms of Service</FooterLink>
         </FooterLinks>
-        <SocialLinks>
-          <SocialIcon href="#">
-            <FaLinkedin />
-          </SocialIcon>
-          <SocialIcon href="#">
-            <FaGithub />
-          </SocialIcon>
-        </SocialLinks>
+
+        <Copyright>
+          © 2026 MediFind. All rights reserved.
+        </Copyright>
       </FooterContent>
-      <Copyright>
-        © 2026 MediFind. All rights reserved.
-      </Copyright>
     </FooterContainer>
   );
 }

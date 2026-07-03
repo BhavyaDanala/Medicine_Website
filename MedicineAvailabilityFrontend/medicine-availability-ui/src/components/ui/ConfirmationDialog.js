@@ -4,9 +4,10 @@ import Modal from './Modal';
 
 const Message = styled.p`
   font-size: ${theme.fontSizes.md};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.darkerGray};
   margin-bottom: ${theme.spacing.xl};
-  line-height: 1.5;
+  line-height: 1.6;
+  font-family: ${theme.fonts.primary};
 `;
 
 const ButtonGroup = styled.div`
@@ -16,13 +17,19 @@ const ButtonGroup = styled.div`
 `;
 
 const Button = styled.button`
-  padding: ${theme.spacing.md} ${theme.spacing.xl};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: none;
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
-  font-weight: 600;
+  font-weight: ${theme.fontWeights.semibold};
+  font-family: ${theme.fonts.primary};
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all ${theme.transitions.normal};
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
+  }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
     padding: ${theme.spacing.sm} ${theme.spacing.md};
@@ -33,10 +40,11 @@ const Button = styled.button`
 const ConfirmButton = styled(Button)`
   background: linear-gradient(135deg, ${theme.colors.error} 0%, #c62828 100%);
   color: ${theme.colors.white};
+  box-shadow: ${theme.shadows.sm};
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+    box-shadow: ${theme.shadows.md};
   }
 
   &:disabled {
@@ -48,7 +56,7 @@ const ConfirmButton = styled(Button)`
 
 const CancelButton = styled(Button)`
   background-color: ${theme.colors.mediumGray};
-  color: ${theme.colors.darkGray};
+  color: ${theme.colors.darkerGray};
 
   &:hover {
     background-color: ${theme.colors.darkGray};

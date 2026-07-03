@@ -4,79 +4,125 @@ import { theme } from '../../styles/theme';
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacing.xs};
+  gap: ${theme.spacing.sm};
 `;
 
 const Label = styled.label`
   font-size: ${theme.fontSizes.sm};
-  font-weight: 500;
-  color: ${theme.colors.darkGray};
+  font-weight: ${theme.fontWeights.medium};
+  color: ${theme.colors.darkerGray};
+  font-family: ${theme.fonts.primary};
 `;
 
 const Input = styled.input`
-  padding: ${theme.spacing.md};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: 2px solid ${theme.colors.mediumGray};
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
   font-family: ${theme.fonts.primary};
-  transition: border-color 0.3s ease;
+  transition: all ${theme.transitions.normal};
+  background: ${theme.colors.white};
+  color: ${theme.colors.darkerGray};
+
+  &::placeholder {
+    color: ${theme.colors.darkGray};
+  }
 
   &:focus {
     outline: none;
-    border-color: ${theme.colors.medicalBlue};
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 4px ${theme.colors.primaryLighter};
   }
 
-  ${({ isValid }) => !isValid && `
+  &:hover {
+    border-color: ${theme.colors.darkGray};
+  }
+
+  ${({ $isValid }) => !$isValid && `
     border-color: ${theme.colors.error} !important;
 
     &:focus {
       border-color: ${theme.colors.error} !important;
-      box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.1) !important;
+      box-shadow: 0 0 0 4px ${theme.colors.errorLighter} !important;
     }
   `}
 
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
+  }
+
   @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.sm};
+    padding: ${theme.spacing.sm} ${theme.spacing.md};
     font-size: ${theme.fontSizes.sm};
   }
 `;
 
 const TextArea = styled.textarea`
-  padding: ${theme.spacing.md};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: 2px solid ${theme.colors.mediumGray};
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
   font-family: ${theme.fonts.primary};
-  transition: border-color 0.3s ease;
+  transition: all ${theme.transitions.normal};
   resize: vertical;
   min-height: 100px;
+  background: ${theme.colors.white};
+  color: ${theme.colors.darkerGray};
+
+  &::placeholder {
+    color: ${theme.colors.darkGray};
+  }
 
   &:focus {
     outline: none;
-    border-color: ${theme.colors.medicalBlue};
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 4px ${theme.colors.primaryLighter};
+  }
+
+  &:hover {
+    border-color: ${theme.colors.darkGray};
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
   }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.sm};
+    padding: ${theme.spacing.sm} ${theme.spacing.md};
     font-size: ${theme.fontSizes.sm};
   }
 `;
 
 const Select = styled.select`
-  padding: ${theme.spacing.md};
+  padding: ${theme.spacing.lg} ${theme.spacing.xl};
   border: 2px solid ${theme.colors.mediumGray};
-  border-radius: ${theme.spacing.md};
+  border-radius: ${theme.borderRadius.lg};
   font-size: ${theme.fontSizes.md};
   font-family: ${theme.fonts.primary};
-  transition: border-color 0.3s ease;
+  transition: all ${theme.transitions.normal};
+  background: ${theme.colors.white};
+  color: ${theme.colors.darkerGray};
+  cursor: pointer;
 
   &:focus {
     outline: none;
-    border-color: ${theme.colors.medicalBlue};
+    border-color: ${theme.colors.primary};
+    box-shadow: 0 0 0 4px ${theme.colors.primaryLighter};
+  }
+
+  &:hover {
+    border-color: ${theme.colors.darkGray};
+  }
+
+  @media (max-width: ${theme.breakpoints.tablet}) {
+    padding: ${theme.spacing.md} ${theme.spacing.lg};
+    font-size: ${theme.fontSizes.sm};
   }
 
   @media (max-width: ${theme.breakpoints.mobile}) {
-    padding: ${theme.spacing.sm};
+    padding: ${theme.spacing.sm} ${theme.spacing.md};
     font-size: ${theme.fontSizes.sm};
   }
 `;
@@ -95,7 +141,7 @@ function FormInput({ label, type = 'text', value, onChange, placeholder, require
         max={max}
         step={step}
         maxLength={maxLength}
-        isValid={isValid}
+        $isValid={isValid}
       />
     </FormGroup>
   );
