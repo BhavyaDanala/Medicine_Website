@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PharmacyService.Features.Pharmacies.DTOs;
 using PharmacyService.Models;
 
 namespace PharmacyService.Data
@@ -10,10 +11,12 @@ namespace PharmacyService.Data
             : base(options)
         {
         }
-
+        //public DbSet<LowStockDto> lowStocks { get; set; }/
         public DbSet<Pharmacy> Pharmacies { get; set; }
 
         public DbSet<PharmacyMedicine> PharmacyMedicines { get; set; }
+
+        public DbSet<NotificationLog> NotificationLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,8 +26,6 @@ namespace PharmacyService.Data
 
             base.OnModelCreating(modelBuilder);
         }
-
-        public DbSet<Medicine> Medicines { get; set; }
 
     }
 }

@@ -43,7 +43,15 @@ builder.Services.AddSwaggerGen(options =>
         });
 });
 
-builder.Services.AddHttpClient<DashboardAggregatorService>();
+builder.Services.AddHttpClient<DashboardAggregatorService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7196");
+})
+.ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+{
+    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+});
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(

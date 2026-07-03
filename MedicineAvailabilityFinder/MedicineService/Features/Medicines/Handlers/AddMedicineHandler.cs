@@ -1,4 +1,5 @@
-﻿using MediatR;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 using MedicineService.Data;
 using MedicineService.Features.Medicines.Commands;
 using MedicineService.Models;
@@ -19,6 +20,13 @@ namespace MedicineService.Features.Medicines.Handlers
             (AddMedicineCommand request,
              CancellationToken cancellationToken)
         {
+            var exists = await _context.Medicines
+                .AnyAsync(m => m.MedicineName.ToLower() == request.MedicineName.ToLower(), cancellationToken);
+
+            if (exists)
+            {
+                throw new InvalidOperationException("A medicine with this name already exists.");
+            }
             var medicine = new Medicine
             {
                 MedicineName = request.MedicineName,

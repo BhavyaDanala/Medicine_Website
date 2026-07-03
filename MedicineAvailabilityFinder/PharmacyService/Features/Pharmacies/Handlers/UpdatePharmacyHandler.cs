@@ -35,7 +35,12 @@ namespace PharmacyService.Features.Pharmacies.Handlers
 
             pharmacy.Address = request.Pharmacy.Address;
 
-            pharmacy.PhoneNumber =  request.Pharmacy.PhoneNumber;
+            pharmacy.PhoneNumber = request.Pharmacy.PhoneNumber;
+
+            if (!string.IsNullOrEmpty(request.Pharmacy.Email))
+            {
+                pharmacy.Email = request.Pharmacy.Email;
+            }
 
             pharmacy.Latitude = request.Pharmacy.Latitude;
 

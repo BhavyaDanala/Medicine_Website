@@ -1,4 +1,4 @@
-﻿using AuthService.Models;
+using AuthService.Models;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -18,7 +18,7 @@ namespace AuthService.Services
 
         public string GenerateToken(User user)
         {
-            var claims = new[]
+            var claims = new List<Claim>
             {
                 new Claim(
                     ClaimTypes.NameIdentifier,
@@ -30,8 +30,17 @@ namespace AuthService.Services
 
                 new Claim(
                     ClaimTypes.Role,
-                    user.Role)
+                    user.Role),
+
+                new Claim(
+                    ClaimTypes.Name,
+                    user.Name ?? "User")
             };
+
+            if (user.PharmacyId.HasValue)
+            {
+                claims.Add(new Claim("PharmacyId", user.PharmacyId.Value.ToString()));
+            }
 
             var key =
                 new SymmetricSecurityKey(

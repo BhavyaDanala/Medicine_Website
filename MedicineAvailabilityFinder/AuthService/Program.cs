@@ -1,6 +1,6 @@
 using AuthService.Data;
-using Microsoft.EntityFrameworkCore;
 using AuthService.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -57,6 +57,8 @@ builder.Services.AddMediatR(cfg =>
 
 
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<EmailService>();
+builder.Services.AddHttpClient();
 
 builder.Services.AddCors(options =>
 {

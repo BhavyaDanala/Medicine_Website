@@ -23,7 +23,13 @@ namespace PharmacyService.Features.Pharmacies.Handlers
                 Address = request.Address,
                 PhoneNumber = request.PhoneNumber,
                 Latitude = request.Latitude,
-                Longitude = request.Longitude
+                Longitude = request.Longitude,
+                UserId = request.UserId,
+                Email = request.Email ?? string.Empty,
+                OpeningTime = request.OpeningTime ?? string.Empty,
+                ClosingTime = request.ClosingTime ?? string.Empty
+
+
             };
 
             _context.Pharmacies.Add(pharmacy);

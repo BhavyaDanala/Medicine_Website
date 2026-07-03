@@ -1,4 +1,4 @@
-﻿using AuthService.Data;
+using AuthService.Data;
 using AuthService.Features.Auth.Commands;
 using AuthService.Services;
 using MediatR;
@@ -35,6 +35,11 @@ namespace AuthService.Features.Auth.Handlers
                     "Invalid Email");
             }
 
+            if (user.PasswordHash == "PENDING_ACTIVATION")
+            {
+                throw new Exception("Your account setup is not completed yet. Please create your password using the activation link sent to your email.");
+            }
+
             bool isValid =
                 BCrypt.Net.BCrypt.Verify(
                     request.Password,
@@ -44,6 +49,18 @@ namespace AuthService.Features.Auth.Handlers
             {
                 throw new Exception(
                     "Invalid Password");
+            }
+
+            if (user.Role == "Pharmacy")
+            {
+                if (user.ApprovalStatus == "Pending")
+                {
+                    throw new Exception("Your pharmacy account is pending admin approval.");
+                }
+                if (user.ApprovalStatus == "Rejected")
+                {
+                    throw new Exception("Your pharmacy registration request was rejected. Please contact the administrator.");
+                }
             }
 
             return _jwtService.GenerateToken(user);

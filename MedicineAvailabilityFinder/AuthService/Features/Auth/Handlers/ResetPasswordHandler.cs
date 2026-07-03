@@ -14,28 +14,45 @@ namespace AuthService.Features.Auth.Handlers
             _context = context;
         }
 
-        public async Task<string> Handle( ResetPasswordCommand request, CancellationToken cancellationToken)
-
+        public async Task<string> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
         {
-            var user =
-                await _context.Users
-                .FirstOrDefaultAsync(
-                    x => x.ResetToken == request.Token);
-
-            if (user == null)
+            // OTP-based reset (new flow)
+            if (!string.IsNullOrEmpty(request.Email) && !string.IsNullOrEmpty(request.OtpCode))
             {
+                var otpRecord = await _context.OtpVerifications
+                    .Where(o => o.Email == request.Email
+                        && o.Purpose == "ForgotPassword"
+                        && o.IsUsed
+                        && o.ExpiresAt > DateTime.UtcNow.AddMinutes(-15))
+                    .OrderByDescending(o => o.ExpiresAt)
+                    .FirstOrDefaultAsync();
+
+                if (otpRecord == null)
+                    throw new Exception("OTP session expired. Please request a new OTP.");
+
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == request.Email);
+                if (user == null)
+                    throw new Exception("User not found");
+
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+                await _context.SaveChangesAsync();
+
+                return "Password Reset Successfully";
+            }
+
+            // Legacy token-based reset (fallback)
+            var userByToken = await _context.Users
+                .FirstOrDefaultAsync(x => x.ResetToken == request.Token);
+
+            if (userByToken == null)
                 throw new Exception("Invalid Token");
-            }
 
-            if (user.ResetTokenExpiry < DateTime.UtcNow)
-            {
+            if (userByToken.ResetTokenExpiry < DateTime.UtcNow)
                 throw new Exception("Token Expired");
-            }
 
-            user.PasswordHash =BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
-
-            user.ResetToken = null;
-            user.ResetTokenExpiry = null;
+            userByToken.PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+            userByToken.ResetToken = null;
+            userByToken.ResetTokenExpiry = null;
 
             await _context.SaveChangesAsync();
 

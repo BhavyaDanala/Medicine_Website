@@ -2,6 +2,7 @@
 using PharmacyService.Data;
 using PharmacyService.Features.Pharmacies.Commands;
 using PharmacyService.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace PharmacyService.Features.Pharmacies.Handlers
 {
@@ -15,11 +16,22 @@ namespace PharmacyService.Features.Pharmacies.Handlers
             _context = context;
         }
 
-        public async Task<int> Handle(AddInventoryCommand request,CancellationToken cancellationToken)
+        public async Task<int> Handle(
+    AddInventoryCommand request,
+    CancellationToken cancellationToken)
         {
+            var pharmacy = await _context.Pharmacies
+                .FirstOrDefaultAsync(
+                    p => p.UserId == request.UserId);
+
+            if (pharmacy == null)
+            {
+                throw new Exception("Pharmacy not found");
+            }
+
             var inventory = new PharmacyMedicine
             {
-                PharmacyId = request.PharmacyId,
+                PharmacyId = pharmacy.PharmacyId,
                 MedicineId = request.MedicineId,
                 Quantity = request.Quantity,
                 Price = request.Price,

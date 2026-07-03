@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PharmacyService.Data;
+using MedicineService.Data;
 using MediatR;
 using PharmacyService.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -47,12 +48,18 @@ builder.Services.AddSwaggerGen(options =>
 
 
 builder.Services.AddMediatR(typeof(Program));
+builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<PharmacyService.Data.ApplicationDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<MedicineService.Data.ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddHttpClient<NotificationService>();
+builder.Services.AddScoped<EmailNotificationService>();
 
 builder.Services.AddCors(options =>
 {
@@ -91,6 +98,8 @@ builder.Services.AddAuthentication(
 });
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

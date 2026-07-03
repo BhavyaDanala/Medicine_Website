@@ -1,4 +1,5 @@
 using MedicineService.Data;
+using MedicineService.Common;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 
@@ -13,6 +14,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMediatR(typeof(Program));
+
+// Register Fuzzy Search Service
+builder.Services.AddScoped<FuzzySearchService>();
 
 // SQL Server Configuration
 

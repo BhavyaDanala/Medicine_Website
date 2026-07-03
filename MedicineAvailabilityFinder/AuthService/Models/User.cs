@@ -1,4 +1,4 @@
-﻿namespace AuthService.Models
+namespace AuthService.Models
 {
     public class User
     {
@@ -20,5 +20,16 @@
 
         public DateTime? ResetTokenExpiry { get; set; }
 
+        public bool IsActivated { get; set; } = true;
+
+        public string? ActivationToken { get; set; }
+
+        public DateTime? ActivationTokenExpiry { get; set; }
+
+        public int? PharmacyId { get; set; }
+
+        public string ApprovalStatus { get; set; } = "Pending";
+
+        public ICollection<UserAddress> UserAddresses { get; set; }
     }
 }

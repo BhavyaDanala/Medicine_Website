@@ -11,5 +11,9 @@
         public decimal Price { get; set; }
 
         public DateTime LastUpdated { get; set; }
+
+        public string OpeningTime { get; set; }
+
+        public string ClosingTime { get; set; }
     }
 }

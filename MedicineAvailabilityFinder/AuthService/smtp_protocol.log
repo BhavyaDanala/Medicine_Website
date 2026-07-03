@@ -1,0 +1,1565 @@
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1812 BODY=8BITMIME
+C: RCPT TO:<test@example.com>
+S: 250 2.1.0 OK d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 10:47:43 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <QXQYCY9TJTU4.W10S65YYTH6D@desktop-3kahuv2>
+C: To: test@example.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>371244</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781673313 d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-8434b05d7d7sm15090245b3a.60 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37c5b377e43sm3631703a91.10 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 535-5.7.8 Username and Password not accepted. For more information, go to
+S: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-37c5b377e43sm3631703a91.10 - gsmtp
+C: AUTH LOGIN
+S: 334 VXNlcm5hbWU6
+C: ********
+S: 334 UGFzc3dvcmQ6
+C: ********
+S: 535-5.7.8 Username and Password not accepted. For more information, go to
+S: 535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-37c5b377e43sm3631703a91.10 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1812 BODY=8BITMIME
+C: RCPT TO:<test@example.com>
+S: 250 2.1.0 OK d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+S: 250 2.1.5 OK d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+C: DATA
+S: 354 Go ahead d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 10:54:38 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <SOQR2VBTJTU4.RN4IQOGR924V@desktop-3kahuv2>
+C: To: test@example.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>779737</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781673728 d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d9443c01a7336-2c42f7c651dsm149266235ad.26 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<gokulguna780@gmail.com>
+S: 250 2.1.0 OK 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+S: 250 2.1.5 OK 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+C: DATA
+S: 354 Go ahead 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 11:02:11 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <UC3SXXDTJTU4.79UPHARFJAYM1@desktop-3kahuv2>
+C: To: gokulguna780@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>526682</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781674182 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 41be03b00d2f7-c86651a005fsm13072935a12.28 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<gokulguna780@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 11:03:35 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <ILQKSBETJTU4.10UT43GH6PMV3@desktop-3kahuv2>
+C: To: gokulguna780@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>855801</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781674265 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37c52092ee3sm4981757a91.0 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1817 BODY=8BITMIME
+C: RCPT TO:<gokul.gcce@sece.ac.in>
+S: 250 2.1.0 OK d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 11:07:57 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <L7OT4JFTJTU4.N6ZOWFEKLGLA@desktop-3kahuv2>
+C: To: gokul.gcce@sece.ac.in
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>628029</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781674527 d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-8434b048496sm15642417b3a.54 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1815 BODY=8BITMIME
+C: RCPT TO:<g8864870@gmail.com>
+S: 250 2.1.0 OK d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 11:12:20 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <Z15XNQGTJTU4.JWRIX9B35TB73@desktop-3kahuv2>
+C: To: g8864870@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>992846</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781674791 d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-8434ac9c4c0sm13414607b3a.3 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1828 BODY=8BITMIME
+C: RCPT TO:<mettupallysreejareddy@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 12:46:04 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <KPUJUK6UJTU4.5LX8I31JSQPN2@desktop-3kahuv2>
+C: To: mettupallysreejareddy@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>659123</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781680416 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37c65580d9esm3088288a91.12 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [2406:b400:1a:448c:186a:7019:70e0:ef1e]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [2406:b400:1a:448c:186a:7019:70e0:ef1e]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<rjagadeeshnit@gmail.com>
+S: 250 2.1.0 OK d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+S: 250 2.1.5 OK d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+C: DATA
+S: 354 Go ahead d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 22:48:19 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <A80GVKSYJTU4.IZEMBV5S7G8P@desktop-3kahuv2>
+C: To: rjagadeeshnit@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>728190</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781716552 d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d9443c01a7336-2c42fbb50e5sm173407785ad.35 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [2406:b400:1a:448c:186a:7019:70e0:ef1e]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [2406:b400:1a:448c:186a:7019:70e0:ef1e]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1821 BODY=8BITMIME
+C: RCPT TO:<rjagadeesh2004@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Wed, 17 Jun 2026 23:15:20 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <XUWCX00ZJTU4.GTUDY27AFIAK2@desktop-3kahuv2>
+C: To: rjagadeesh2004@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>855341</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781718172 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37c5228ecd9sm6532089a91.11 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1818 BODY=8BITMIME
+C: RCPT TO:<jlzxc90459@minitts.net>
+S: 250 2.1.0 OK d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+S: 250 2.1.5 OK d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+C: DATA
+S: 354 Go ahead d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Thu, 18 Jun 2026 14:24:39 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <PO8C2OY5KTU4.5A4NNVX1RP0O@desktop-3kahuv2>
+C: To: jlzxc90459@minitts.net
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>121368</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781772883 d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d9443c01a7336-2c6e54e823esm23474855ad.72 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<bhavya.danala@zapcg.com>
+S: 250 2.1.0 OK d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Thu, 18 Jun 2026 16:03:04 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <X1D5JSP6KTU4.63HF8NLU84BO@desktop-3kahuv2>
+C: To: bhavya.danala@zapcg.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>284424</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781778787 d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-8453e266c0csm1958990b3a.6 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<harinibanda27@gmail.com>
+S: 250 2.1.0 OK 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+S: 250 2.1.5 OK 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+C: DATA
+S: 354 Go ahead 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 11:42:10 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <I5C3PSQFKTU4.KGMKI1OPQ9TU@desktop-3kahuv2>
+C: To: harinibanda27@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>748956</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781849534 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 41be03b00d2f7-c8a84c6e560sm1395157a12.1 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1823 BODY=8BITMIME
+C: RCPT TO:<harinibharini877@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 11:54:00 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <TEEM22UFKTU4.QKQ3C6Q9UTFG1@desktop-3kahuv2>
+C: To: harinibharini877@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>529687</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781850243 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37d15de53ffsm1686303a91.12 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1823 BODY=8BITMIME
+C: RCPT TO:<harinibharini877@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 12:03:05 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <JUGZ5KWFKTU4.H3LP4N309A701@desktop-3kahuv2>
+C: To: harinibharini877@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>425456</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781850788 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37d15df7424sm1660222a91.14 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1823 BODY=8BITMIME
+C: RCPT TO:<harinibharini877@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 12:03:56 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <UF26MSWFKTU4.7CRJMTIR3R5A3@desktop-3kahuv2>
+C: To: harinibharini877@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>226472</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781850839 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37d15f92d5bsm715823a91.0 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1815 BODY=8BITMIME
+C: RCPT TO:<abc566219@gmail.com>
+S: 250 2.1.0 OK d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+S: 250 2.1.5 OK d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+C: DATA
+S: 354 Go ahead d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 12:05:29 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <RQ0F38XFKTU4.S653ODU440HE@desktop-3kahuv2>
+C: To: abc566219@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>301008</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781850932 d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d9443c01a7336-2c7209bbae7sm12612785ad.52 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1815 BODY=8BITMIME
+C: RCPT TO:<xyzzzzzz@gmail.com>
+S: 250 2.1.0 OK d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 15:18:35 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <UIZ26GEHKTU4.041LTFQQRQVJ1@desktop-3kahuv2>
+C: To: xyzzzzzz@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>387819</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781862519 d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-845537fa65csm1848635b3a.37 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1819 BODY=8BITMIME
+C: RCPT TO:<harinibharini@gmail.com>
+S: 250 2.1.0 OK d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+S: 250 2.1.5 OK d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+C: DATA
+S: 354 Go ahead d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 15:19:51 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <JUFCQSEHKTU4.3A998OWM9K2Y@desktop-3kahuv2>
+C: To: harinibharini@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>278945</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781862594 d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection d2e1a72fcca58-84553676987sm2247619b3a.18 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [14.97.205.158]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1823 BODY=8BITMIME
+C: RCPT TO:<harinibharini877@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 15:20:05 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <E8RM0VEHKTU4.2WOQ6EGFPUXS2@desktop-3kahuv2>
+C: To: harinibharini877@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>730054</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781862608 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37d157a6157sm2222168a91.10 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1824 BODY=8BITMIME
+C: RCPT TO:<harinibharini8777@gmail.com>
+S: 250 2.1.0 OK 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+S: 250 2.1.5 OK 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+C: DATA
+S: 354 Go ahead 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 15:23:38 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <10UVBUFHKTU4.VH8YNKKML7R33@desktop-3kahuv2>
+C: To: harinibharini8777@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>469897</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781862822 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 41be03b00d2f7-c8a8525ffb8sm2058339a12.10 - gsmtp
+Connected to smtp://smtp.gmail.com:587/?starttls=always
+S: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-STARTTLS
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: STARTTLS
+S: 220 2.0.0 Ready to start TLS
+C: EHLO DESKTOP-3KAHUV2
+S: 250-smtp.gmail.com at your service, [103.102.18.154]
+S: 250-SIZE 35882577
+S: 250-8BITMIME
+S: 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+S: 250-ENHANCEDSTATUSCODES
+S: 250-PIPELINING
+S: 250-CHUNKING
+S: 250 SMTPUTF8
+C: AUTH PLAIN ********
+S: 235 2.7.0 Accepted
+C: MAIL FROM:<bhavyadanala1804@gmail.com> SIZE=1823 BODY=8BITMIME
+C: RCPT TO:<harinibharini877@gmail.com>
+S: 250 2.1.0 OK 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp
+S: 250 2.1.5 OK 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp
+C: DATA
+S: 354 Go ahead 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp
+C: From: MediFind <bhavyadanala1804@gmail.com>
+C: Date: Fri, 19 Jun 2026 15:24:26 +0530
+C: Subject: MediFind - Email Verification OTP
+C: Message-Id: <FOFV62GHKTU4.96PGCWAI21BR2@desktop-3kahuv2>
+C: To: harinibharini877@gmail.com
+C: MIME-Version: 1.0
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <!DOCTYPE html>
+C: <html>
+C: <head>
+C:   <style>
+C:     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; margin: 0; padding: 20px; }
+C:     .container { max-width: 500px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+C:     .header { background: #667eea; padding: 30px; text-align: center; color: white; }
+C:     .header h1 { margin: 0; font-size: 24px; }
+C:     .body { padding: 30px; text-align: center; }
+C:     .otp-box { background: #f4f6f9; border: 2px dashed #667eea; border-radius: 12px; padding: 20px; margin: 20px 0; }
+C:     .otp-code { font-size: 42px; font-weight: bold; color: #667eea; letter-spacing: 8px; }
+C:     .expiry { color: #888; font-size: 13px; margin-top: 10px; }
+C:     .footer { background: #f4f6f9; padding: 16px; text-align: center; color: #aaa; font-size: 12px; }
+C:   </style>
+C: </head>
+C: <body>
+C:   <div class='container'>
+C:     <div class='header'><h1>🏥 MediFind - Email Verification</h1></div>
+C:     <div class='body'>
+C:       <p>Thank you for registering with MediFind. Use the OTP below to verify your email address.</p>
+C:       <div class='otp-box'>
+C:         <div class='otp-code'>442312</div>
+C:         <div class='expiry'>⏱ This OTP expires in 10 minutes</div>
+C:       </div>
+C:       <p style='color:#666;font-size:13px;'>Do not share this OTP with anyone.</p>
+C:     </div>
+C:     <div class='footer'>MediFind &copy; 2026 · Automated Message · Do not reply</div>
+C:   </div>
+C: </body>
+C: </html>
+C: .
+S: 250 2.0.0 OK  1781862869 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp
+C: QUIT
+S: 221 2.0.0 closing connection 98e67ed59e1d1-37d1536b049sm2462595a91.2 - gsmtp

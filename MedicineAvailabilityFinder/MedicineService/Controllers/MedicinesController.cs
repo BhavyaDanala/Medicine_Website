@@ -1,4 +1,4 @@
-﻿using MediatR;
+using MediatR;
 using MedicineService.Features.Medicines.Commands;
 using MedicineService.Features.Medicines.Dtos;
 using MedicineService.Features.Medicines.Queries;
@@ -22,18 +22,24 @@ namespace MedicineService.Controllers
         public async Task<IActionResult> AddMedicine
             (AddMedicineCommand command)
         {
-            var medicineId = await _mediator.Send(command);
-
-            return Ok(new
+            try
             {
-                Message = "Medicine Added Successfully",
-                MedicineId = medicineId
-            });
+                var medicineId = await _mediator.Send(command);
+
+                return Ok(new
+                {
+                    Message = "Medicine Added Successfully",
+                    MedicineId = medicineId
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
 
         [HttpGet("search")]
-
         public async Task<IActionResult> SearchMedicine
             ([FromQuery] string searchTerm)
         {
@@ -45,6 +51,40 @@ namespace MedicineService.Controllers
             return Ok(result);
         }
 
+        [HttpGet("suggest")]
+        public async Task<IActionResult> GetMedicineSuggestions([FromQuery] string q)
+        {
+            var result = await _mediator.Send(
+                new GetMedicineSuggestionsQuery
+                {
+                    Query = q
+                });
+            return Ok(result);
+        }
+
+        [HttpGet("symptom-suggest")]
+        public async Task<IActionResult> GetSymptomSuggestions([FromQuery] string q)
+        {
+            var result = await _mediator.Send(
+                new GetSymptomSuggestionsQuery
+                {
+                    Query = q
+                });
+            return Ok(result);
+        }
+
+        [HttpGet("fuzzy-search")]
+        public async Task<IActionResult> FuzzySearchMedicine([FromQuery] string searchTerm)
+        {
+            var result = await _mediator.Send(
+                new FuzzySearchMedicineQuery
+                {
+                    SearchTerm = searchTerm,
+                    MaxResults = 5,
+                    MinSimilarity = 0.3
+                });
+            return Ok(result);
+        }
 
         //To get the medicine by symptom
         [HttpGet("symptom-search")]
